@@ -3,8 +3,8 @@
 class CreditCard 
     attr_reader :card_number, :limit, 
    
-    def intialize(card_number, limit)
-        @card_number = "card_number"
+    def initialize(card_number, limit)
+        @card_number = card_number
         @limit = limit 
     end
    
@@ -35,6 +35,6 @@ class CreditCard
     end 
     
     def last_four 
-        @card_number[-4, 4] # 
+        @card_number[-4, 4]  
     end
 end 
